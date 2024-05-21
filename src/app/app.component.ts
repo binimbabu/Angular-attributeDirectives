@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'directive';
+  toggleOn:boolean = false;
+  change(){
+    this.toggleOn = !this.toggleOn;
+  }
 }
